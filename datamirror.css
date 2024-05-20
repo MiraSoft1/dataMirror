@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+}
+ span {
+	display: inline-block;
+	
+}
+.dm-ul,
+.dm-li {
+	list-style: none;
+	
+}
+.dm-ul {
+	padding-left: 40px !important;
+	padding-right: 10px;
+}
+#mirror,
+.mirror {
+	padding: 20px;
+	background-color: black;
+	color: white;
+	width: 100% ;
+	overflow: scroll;
+	margin-bottom: 3px;
+}
+code pre {
+	border: 1px solid #00ffee;
+	border-top-color: transparent;
+	margin-left: 40px;
+	margin-bottom: 4px;
+	padding: 10px;
+	width: fit-content;
+	color: white;
+
+	max-height: 300px;
+	overflow-y: scroll;
+
+}
+
+code pre.pre-function {
+	color: #ffd500;
+}
+.dm-dt,
+.dm-constructor-name {
+	padding-left: 10px;
+	opacity: .3;
+	font-size: 13px;
+}
+.dm-li {
+	min-width: 800px;
+	max-width: fit-content;
+	padding-top: 5px ;
+}
+.dm-btn-open .dm-arrow {
+	display: inline-block;
+	transform: translate(0, 1px);
+	margin-left: 6px;
+	border: 6px solid transparent;
+	border-left-color: white;
+	border-left-width: 8px;
+	transform-origin: left right;
+	transition: all .3s;
+}
+.dm-btn-open + ul,
+.dm-btn-open + code {
+	display: none;
+}
+.dm-btn-opened + ul,
+.dm-btn-opened + code {
+	display: block;
+}
+.dm-btn-opened .dm-arrow {
+	margin: 0px 10px;
+	border-left-color: red;
+	transform: rotate(90deg);
+}
+.dm-btn-opened + .bracket {
+	color: red;
+}
+.dm-btn-opened + ul {
+	border-left: 1px solid red;
+	display: block;
+}
+.dm-index {
+	position: relative;
+
+}
+.dm-index::before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 1px;
+	left: -40px;
+	top: 50%;
+	background-color: #444;
+	opacity: 1;
+}
+.bracket {
+	color: #ffd500;
+	font-weight: bold;
+}
+.leftBracket {
+	margin-left: 5px;
+}
+.dm-string ,
+.dm-quotation,
+.dm-pointer ,
+.label {
+	display: inline;
+}
+.dm-string {
+	color: #0EFF00;
+	display: inline-block;
+}
+.dm-quotation,
+.dm-pointer {
+	font-weight: bold;
+}
+.dm-number {
+	color: #00ffee;
+}
+.dm-data-type,
+.dm-data-type {
+	color: #00ffee;
+}
+
+.dm-quotation ,
+.dm-keyword {
+	color: #FF00BD;
+}
+.dm-pointer {
+	padding: 15px;
+	color: #FF9000;
+}
+.tag {
+	color: #00A1FF;
+}
+.attr {
+	color: #ffd500;
+}
+.attr-value {
+	color: #0EFF00;
+}
+
+.dm-error {
+	background-color: #111;
+	color: red;
+}
