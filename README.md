@@ -3,13 +3,14 @@ This function for data debug in javascript
 
 Step 1 : download files to your pc .
 
-step 2 : include files to your page head
+Step 2 : include files to your page head
 ```
 <link href="./datamirror.css" rel="stylesheet" type="text/css" media="all" />
 <script src="./datamirror.min.js"></script>
 
 ```
-Step 3: open script 
+Step 3: open script and use it as dm() shortcut.
+Example to use it.
 ```
 <script>
 let myObject = {
@@ -23,3 +24,8 @@ dm(myobject);
 ```
 
 after this open page in browser to see output
+
+#### note 
+This function accepts 2 variables.
+ The first parameter represents a variable, object, or anything else you want to see on the page.
+ The second parameter is optional, representing an explanatory text before the output if desired.
