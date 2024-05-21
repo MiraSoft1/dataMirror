@@ -14,7 +14,7 @@ Example to use it.
 ```
 <script>
   let myObject = {
-     name : "Najeeb    Alshami",
+     name : "Najeeb Alshami",
      age: 22,
      skills : ["Javascript", "CSS", "HTML", "NodeJs" ]
   };
